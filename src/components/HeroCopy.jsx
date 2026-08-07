@@ -2,7 +2,7 @@ export default function HeroCopy() {
   return (
     <div className="animate-fadeUp">
       <span className="font-mono inline-block text-xs text-foam tracking-wide px-2.5 py-1.5 rounded-md border border-foam/35 bg-foam/[0.06] mb-5">
-        $ ./shortlist --location=goa --year=2026
+        28-31 OCT 2026 --location=goa --year=2026
       </span>
       <h1 className="font-display font-bold text-[34px] sm:text-[46px] lg:text-[60px] leading-[1.03] tracking-tight max-w-[640px]">
         Pack your bags.
@@ -13,8 +13,7 @@ export default function HeroCopy() {
         </em>
       </h1>
       <p className="mt-[18px] text-base leading-relaxed text-sand-dim max-w-[480px]">
-        Generate a Goa-branded profile frame or a Builder ID card straight from your phone.
-        No login, no crop screen, no waiting — drop a photo and it&apos;s ready to post.
+        One photo in, a Goa-ready frame or Builder ID out - cropped properly, branded properly, done in seconds.
       </p>
       <div className="mt-6 flex gap-6 flex-wrap">
         <Stat value="< 2s" label="upload to export" />
