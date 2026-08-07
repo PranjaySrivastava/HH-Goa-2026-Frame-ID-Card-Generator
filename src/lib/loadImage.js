@@ -14,9 +14,13 @@ export async function fileToImage(file) {
   let blob = file;
 
   if (isHeicFile(file)) {
-    const heic2any = (await import("heic2any")).default;
-    const result = await heic2any({ blob: file, toType: "image/jpeg", quality: 0.92 });
-    blob = Array.isArray(result) ? result[0] : result;
+    try {
+      const { heicTo } = await import("heic-to");
+      blob = await heicTo({ blob: file, type: "image/jpeg", quality: 0.92 });
+    } catch (err) {
+      console.error("[loadImage] HEIC conversion failed:", err);
+      throw err;
+    }
   }
 
   const url = URL.createObjectURL(blob);
