@@ -1,0 +1,29 @@
+{
+  "name": "hh-goa-2026-builder-frame",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "HH Goa 2026 Builder Shortlist — PFP frame & Builder ID card generator",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "echo \"(add eslint if desired)\""
+  },
+  "dependencies": {
+    "@vercel/blob": "^0.27.0",
+    "@vladmandic/face-api": "^1.7.15",
+    "heic2any": "^0.0.4",
+    "lucide-react": "^0.462.0",
+    "nanoid": "^5.0.9",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.15",
+    "vite": "^5.4.11"
+  }
+}
