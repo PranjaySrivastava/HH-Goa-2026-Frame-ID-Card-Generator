@@ -39,14 +39,14 @@ export default function Dropzone({ onFile, statusNote }) {
         onDrop={handleDrop}
         className={
           "border-[1.5px] border-dashed rounded-2xl px-4 py-6 text-center cursor-pointer transition-colors " +
-          (isDragging ? "border-foam bg-foam/[0.06]" : "border-sand/30 hover:border-foam/60 hover:bg-foam/[0.04]")
+          (isDragging ? "border-hh-pink bg-hh-pink/[0.08]" : "border-white/25 hover:border-gold hover:bg-white/5")
         }
       >
-        <UploadCloud className="mx-auto mb-2.5 text-foam" size={26} />
-        <p className="text-[13.5px] text-sand-dim m-0">
-          <strong className="text-sand">Drop a photo</strong> or tap to browse
+        <UploadCloud className="mx-auto mb-2.5 text-gold" size={26} />
+        <p className="text-[13.5px] text-white/80 m-0">
+          <strong className="text-white">Drop a photo</strong> or tap to browse
         </p>
-        <div className="font-mono text-[11px] mt-1.5 text-sand/40">.jpg · .png · .heic — any size, any orientation</div>
+        <div className="font-mono text-[11px] mt-1.5 text-white/40">.jpg · .png · .heic — any size, any orientation</div>
       </div>
       <input
         ref={inputRef}
@@ -60,7 +60,7 @@ export default function Dropzone({ onFile, statusNote }) {
         }}
       />
       {statusNote && (
-        <div className="font-mono text-xs text-sand/40 text-center mt-3.5" role="status">
+        <div className="font-mono text-xs text-gold/90 text-center mt-3.5" role="status">
           {statusNote}
         </div>
       )}

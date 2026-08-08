@@ -9,6 +9,10 @@ export default {
           mid: "#0F2E38",
           line: "#1B4550"
         },
+        hh: {
+          green: "#0E6B3A",
+          pink: "#FF2EA6"
+        },
         coral: {
           DEFAULT: "#FF6B4A",
           dim: "#c9502f",

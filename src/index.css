@@ -7,14 +7,17 @@ html {
 }
 
 body {
-  @apply bg-sea-deep text-sand font-body antialiased;
+  @apply bg-hh-green text-sand font-body antialiased;
   background:
-    radial-gradient(1200px 700px at 85% -10%, rgba(255, 200, 87, 0.1), transparent 60%),
-    radial-gradient(900px 600px at -10% 10%, rgba(78, 205, 196, 0.1), transparent 55%),
-    #081a20;
+    url('/palm-left.svg') left top no-repeat,
+    /* url('/palm-right.svg') right top no-repeat, */
+    radial-gradient(1200px 700px at 85% -10%, rgba(255, 200, 87, 0.08), transparent 60%),
+    radial-gradient(900px 600px at -10% 10%, rgba(255, 46, 166, 0.04), transparent 55%),
+    #0E6B3A;
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   *,
   *::before,
   *::after {
@@ -46,6 +49,7 @@ input[type="range"] {
   background: rgba(245, 241, 230, 0.18);
   outline: none;
 }
+
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   width: 16px;
@@ -55,6 +59,7 @@ input[type="range"]::-webkit-slider-thumb {
   cursor: pointer;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
 }
+
 input[type="range"]::-moz-range-thumb {
   width: 16px;
   height: 16px;
@@ -67,6 +72,7 @@ input[type="range"]::-moz-range-thumb {
 .card-border {
   position: relative;
 }
+
 .card-border::before {
   content: "";
   position: absolute;

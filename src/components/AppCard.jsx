@@ -95,7 +95,7 @@ export default function AppCard() {
   const hasImage = Boolean(img);
 
   return (
-    <div className="card-border relative rounded-xl2 p-5 bg-gradient-to-b from-sea-mid to-sea-deep border border-sea-line shadow-hard animate-fadeUp [animation-delay:120ms]">
+    <div className="card-border relative rounded-xl2 p-5 bg-white/10 backdrop-blur-md border border-white/20 shadow-hard animate-fadeUp [animation-delay:120ms]">
       <ModeToggle mode={mode} onChange={setMode} />
 
       <Dropzone onFile={handleFile} statusNote={status} />
