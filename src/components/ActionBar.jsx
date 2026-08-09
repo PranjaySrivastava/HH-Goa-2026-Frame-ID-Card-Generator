@@ -91,7 +91,7 @@ export default function ActionBar({ canvasRef, mode, disabled }) {
           type="button"
           disabled={disabled}
           onClick={handleDownload}
-          className="flex items-center justify-center gap-2 rounded-[11px] py-3 font-display font-semibold text-sm bg-ink text-sand border border-sand/15 disabled:opacity-40 disabled:cursor-not-allowed active:scale-[0.97] transition-transform"
+          className="flex items-center justify-center gap-2 rounded-[11px] py-3 font-display font-semibold text-sm bg-black/30 text-white border border-white/20 hover:bg-black/50 disabled:opacity-40 disabled:cursor-not-allowed active:scale-[0.97] transition-all"
         >
           <Download size={16} />
           Download PNG
@@ -100,13 +100,13 @@ export default function ActionBar({ canvasRef, mode, disabled }) {
           type="button"
           disabled={disabled || sharing}
           onClick={handleShare}
-          className="flex items-center justify-center gap-2 rounded-[11px] py-3 font-display font-semibold text-sm bg-gradient-to-br from-gold to-gold-light text-ink shadow-[0_8px_18px_-6px_rgba(255,200,87,0.45)] disabled:opacity-40 disabled:cursor-not-allowed active:scale-[0.97] transition-transform"
+          className="flex items-center justify-center gap-2 rounded-[11px] py-3 font-display font-semibold text-sm bg-hh-pink text-white hover:bg-hh-pink/95 hover:scale-[1.02] shadow-[0_8px_18px_-6px_rgba(255,46,166,0.5)] disabled:opacity-40 disabled:cursor-not-allowed active:scale-[0.97] transition-all"
         >
           {sharing ? <Loader2 size={16} className="animate-spin" /> : <XGlyph />}
           {sharing ? "Preparing\u2026" : "Share on X"}
         </button>
       </div>
-      <div className={"font-mono text-[11px] text-center mt-2.5 min-h-[14px] " + (note ? "text-foam" : "text-transparent")}>
+      <div className={"font-mono text-[11px] text-center mt-2.5 min-h-[14px] " + (note ? "text-gold" : "text-transparent")}>
         {note || "placeholder"}
       </div>
     </div>
