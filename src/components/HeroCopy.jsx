@@ -8,7 +8,7 @@ export default function HeroCopy() {
         Pack your bags.
         <br />
         Update your {" "}
-        <em className="not-italic text-gold ">
+        <em className="not-italic text-hh-pink ">
           PFP!
         </em>
       </h1>
