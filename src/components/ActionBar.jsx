@@ -64,7 +64,7 @@ export default function ActionBar({ canvasRef, mode, disabled }) {
   const handleShare = async () => {
     if (!canvasRef.current || sharing) return;
     setSharing(true);
-    const text = `${CAPTIONS[mode]} #FramedINGoa`;
+    const text = `${CAPTIONS[mode]} #FramedInGoa`;
 
     try {
       // Primary path: upload the render, share a link with a real preview.
